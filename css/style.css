@@ -15,6 +15,7 @@ body {
   padding: 2rem 1rem;
 }
 
+/* TITLE */
 .site-title {
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -23,9 +24,10 @@ body {
 /* NAVIGATION */
 .nav {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .nav-box {
