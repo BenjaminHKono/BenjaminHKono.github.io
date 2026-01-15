@@ -24,10 +24,10 @@ body {
 /* NAVIGATION */
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* evenly spaces menu links across the nav */
   flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px; /* optional: keeps nav from stretching too far on large screens */
+  margin: 0 auto;   /* center the nav */
 }
 
 .nav-box {
@@ -49,6 +49,12 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 2.5rem;
   padding: 3rem 2rem;
+  text-align: center; /* center text in all columns */
+}
+
+.column img {
+  display: block;
+  margin: 0 auto; /* center images in their column */
 }
 
 /* SPECIAL TEXT */
