@@ -1,136 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wanna Race?</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-    }
-
-    h1 {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 40px;
-    }
-
-    .columns {
-      display: flex;
-      gap: 40px;
-    }
-
-    .column {
-      flex: 1;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <h1>Wanna Race?</h1>
+  <!-- HEADER -->
+  <header class="hero">
+    <h1 class="site-title">Wanna Race?</h1>
 
-  <div class="columns">
-    <!-- LEFT COLUMN -->
-    <div class="column">
-      <p><strong>That's Great!</strong> You can't have a dog race without dogs.</p>
+    <nav class="nav">
+      <a href="index.html" class="nav-box">Home</a>
+      <a href="racer.html" class="nav-box">Racer Info</a>
+      <a href="team.html" class="nav-box">Our Team</a>
+      <a href="contact.html" class="nav-box">Contact</a>
+    </nav>
+  </header>
 
-      <h2>Wiener Dogs</h2>
-      <p>
-        It's simple. You just have to show up at the races from Noon to 1pm and
-        register your dog at the Registration Tent.
-      </p>
+  <!-- MAIN CONTENT -->
+  <main>
 
-      <p>
-        Please help us get started on time by registering as close to Noon as you can.
-      </p>
+    <section class="three-column">
 
-      <p>
-        After that, your dog will be assigned a heat in our tournament. Then it's up
-        to your dog's giant heart and his tiny little legs.
-      </p>
+      <!-- LEFT COLUMN -->
+      <div class="column left">
+        <p class="section-highlight">That's Great!</p>
+        <p>You can't have a dog race without dogs.</p>
 
-      <p>
-        We'll keep racing until one dog is crowned the Firecracker Grand Champion.
-      </p>
+        <h3>Wiener Dogs</h3>
+        <p>
+          It's simple. Show up at the races from Noon to 1pm and
+          register your dog at the Registration Tent.
+        </p>
+        <p>Please help us get started on time by registering as close to Noon as you can.</p>
+        <p>
+          After that, your dog will be assigned a heat in our tournament. Then it's up
+          to your dog's giant heart and tiny little legs.
+        </p>
+        <p>We'll keep racing until one dog is crowned the Firecracker Grand Champion.</p>
+        <p>Suggested donation: $5 per dog.</p>
 
-      <p>
-        There is a suggested donation of $5 for race registration.
-      </p>
+        <h3>Non-Wiener Dogs</h3>
+        <p>
+          No tournament for non-wieners, but bring your drag basset or
+          nitro-powered labrador to compete in our "All Dog" races.
+        </p>
+        <p>
+          Just for fun—the sight of a dozen yorkies barreling toward the finish line is its own reward.
+        </p>
+        <p>Register at the Registration Tent from Noon to 1pm. Suggested donation: $5 per dog.</p>
+      </div>
 
-      <h2>Non-Wiener Dogs</h2>
-      <p>
-        We don't do a tournament for non-wieners. But bring your drag basset or
-        nitro-powered labrador to compete in one of our "All Dog" races.
-      </p>
+      <!-- MIDDLE COLUMN -->
+      <div class="column middle">
+        <h3>The Rules</h3>
+        <p>
+          Our first priority is fun, and our second priority is raising money
+          for a good cause. A sense of fair play goes a long way toward everyone
+          having a great afternoon.
+        </p>
+        <p>With that in mind, here are a few simple rules:</p>
+        <ul>
+          <li>Have fun.</li>
+          <li>Don't ruin anyone else's fun.</li>
+          <li>Nothing on or over the course except the dogs themselves.</li>
+        </ul>
+        <p>No running alongside, throwing treats or toys, or creating a trail of bacon bits.</p>
+        <p class="section-highlight">If it looks like a dachshund, it's a dachshund.</p>
+        <p>
+          Dogs that resemble a short German Shepherd or a dachshund with a pug face
+          will be registered in the all-breed race.
+        </p>
+        <p>Dogs may be tossed at the starting line but must touch the course at least once before the finish line.</p>
+        <p class="section-highlight">No "full court" dog tossing.</p>
+        <p>When in doubt, talk to us. If something happens that makes the event less than fun, tell the emcees—we'll try our best to make it right.</p>
+      </div>
 
-      <p>
-        It's just for fun, but the sight of a dozen yorkies barreling toward the
-        finish line is its own reward.
-      </p>
+      <!-- RIGHT COLUMN -->
+      <div class="column right">
+        <p class="section-highlight">Extras</p>
+        <p>
+          Want to see past races or our Instagram stream?  
+          <a href="https://www.instagram.com" target="_blank">Check it out</a>
+        </p>
 
-      <p>
-        Other than that, the process is the same. Register at the Registration Tent
-        on the day of the event. Registration is open from Noon to 1pm.
-      </p>
+        <p>
+          All proceeds benefit the Tillamook Animal Shelter. Even if you can't attend, donations are welcome!
+        </p>
+      </div>
 
-      <p>
-        There is a suggested donation of $5 for race registration.
-      </p>
-    </div>
+    </section>
 
-    <!-- RIGHT COLUMN -->
-    <div class="column">
-      <h2>The Rules</h2>
+  </main>
 
-      <p>
-        Our first priority is fun, and our other first priority is raising money
-        for a good cause. But a sense of fair play goes a long way toward everyone
-        having a great afternoon.
-      </p>
-
-      <p>With that in mind, we just have a few simple rules.</p>
-
-      <ul>
-        <li>Have fun.</li>
-        <li>Don't ruin anyone else's fun.</li>
-        <li>Nothing on or over the course except the dogs themselves.</li>
-      </ul>
-
-      <p>
-        That means no running alongside, throwing treats or toys, or creating a
-        trail of bacon bits.
-      </p>
-
-      <p><strong>If it looks like a dachshund, it's a dachshund.</strong></p>
-
-      <p>
-        If your dog looks like a short german shepherd or a dachshund with a pug
-        face, we will gladly register you in the all breed race. That being said,
-        please let us pet your dachshund with a pug face.
-      </p>
-
-      <p>
-        Dogs may be tossed at the starting line, but they must touch the course at
-        least once before the finish line.
-      </p>
-
-      <p><strong>No "full court" dog tossing.</strong></p>
-
-      <p>
-        When in doubt, talk to us.
-      </p>
-
-      <p>
-        If something happens that makes the event less than fun, tell the emcees
-        as soon as possible. We'll try our best to make it right.
-      </p>
-    </div>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 Firecracker Dog Races.  
+      <a href="http://tillamookanimalshelter.org" target="_blank">Tillamook Animal Shelter</a>
+    </p>
+    <p class="footer-disclaimer">
+      By order of the Oregon Dachshund Racing Commission, the maximum wager on an individual wiener race is $10,000.
+    </p>
+  </footer>
 
 </body>
 </html>
