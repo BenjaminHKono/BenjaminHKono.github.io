@@ -167,3 +167,24 @@ footer a {
     flex-direction: column;
   }
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.team-member p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
