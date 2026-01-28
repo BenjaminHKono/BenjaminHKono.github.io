@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wanna Race?</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CENTER THE INTRO TEXT */
+    .intro-text {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      font-weight: bold;
+      color: #c62828; /* match the highlight color in your CSS */
+    }
+
+    /* TWO-COLUMN LAYOUT OVERRIDE */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -20,16 +44,18 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <!-- INTRO TEXT CENTERED -->
+  <p class="intro-text">
+    That's Great!<br>
+    You can't have a dog race without dogs.
+  </p>
 
-    <section class="three-column">
+  <!-- TWO-COLUMN CONTENT -->
+  <main>
+    <section class="two-column">
 
       <!-- LEFT COLUMN -->
       <div class="column left">
-        <p class="section-highlight">That's Great!</p>
-        <p>You can't have a dog race without dogs.</p>
-
         <h3>Wiener Dogs</h3>
         <p>
           It's simple. Show up at the races from Noon to 1pm and
@@ -54,8 +80,8 @@
         <p>Register at the Registration Tent from Noon to 1pm. Suggested donation: $5 per dog.</p>
       </div>
 
-      <!-- MIDDLE COLUMN -->
-      <div class="column middle">
+      <!-- RIGHT COLUMN -->
+      <div class="column right">
         <h3>The Rules</h3>
         <p>
           Our first priority is fun, and our second priority is raising money
@@ -79,21 +105,7 @@
         <p>When in doubt, talk to us. If something happens that makes the event less than fun, tell the emcees—we'll try our best to make it right.</p>
       </div>
 
-      <!-- RIGHT COLUMN -->
-      <div class="column right">
-        <p class="section-highlight">Extras</p>
-        <p>
-          Want to see past races or our Instagram stream?  
-          <a href="https://www.instagram.com" target="_blank">Check it out</a>
-        </p>
-
-        <p>
-          All proceeds benefit the Tillamook Animal Shelter. Even if you can't attend, donations are welcome!
-        </p>
-      </div>
-
     </section>
-
   </main>
 
   <!-- FOOTER -->
