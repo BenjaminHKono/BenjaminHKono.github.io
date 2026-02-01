@@ -15,11 +15,33 @@ body {
   padding: 2rem 1rem;
 }
 
-/* TITLE */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-title {
+  font-size: 2.8rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+/* TITLE 
 .site-title {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-}
+} */
 
 /* NAVIGATION */
 .nav {
