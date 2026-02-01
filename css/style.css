@@ -9,39 +9,37 @@ body {
 
 /* HEADER */
 .hero {
-  background: #000;
+  background-color: #000 !important; /* force black */
   color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
   gap: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.left-nav,
-.right-nav {
+.header-nav {
   display: flex;
   gap: 1rem;
 }
 
 .site-title {
-  font-size: 2.8rem;
+  text-align: center;
+  font-size: 2.6rem;
   margin: 0;
+  line-height: 1.1;
   white-space: nowrap;
 }
 
-
-/* TITLE 
-.site-title {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-} */
+.site-title span {
+  display: block;
+  font-size: 2.6rem;
+}
 
 /* NAVIGATION */
 .nav {
