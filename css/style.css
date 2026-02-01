@@ -210,3 +210,21 @@ footer a {
   margin-top: 0.5rem;
   font-size: 0.95rem;
 }
+
+.champion {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.champion img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin: 0 auto 0.75rem;
+  display: block;
+}
+
+.champion-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
