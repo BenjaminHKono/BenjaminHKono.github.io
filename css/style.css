@@ -24,8 +24,18 @@ body {
 }
 
 .header-nav {
+  flex: 1;                 /* each nav takes equal space */
   display: flex;
-  gap: 1rem;
+}
+
+.header-nav:first-child {
+  justify-content: flex-end;   /* push left nav buttons left */
+  gap: 2rem;                   /* space between Watch / Race */
+}
+
+.header-nav:last-child {
+  justify-content: flex-start; /* push right nav buttons right */
+  gap: 2rem;                   /* space between Our Team / Contact */
 }
 
 .site-title {
