@@ -51,16 +51,17 @@ body {
 }
 
 .nav-box {
-  background: white;
-  color: #c62828;
-  padding: 0.75rem 1.5rem;
+  background: none;
+  color: white;
+  padding: 0.25rem 0;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
 }
 
 .nav-box:hover {
-  background: #ffe5e5;
+  border-bottom: 2px solid white;
 }
 
 /* THREE COLUMN LAYOUT */
