@@ -6,23 +6,38 @@
   <title>Wanna Race?</title>
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* CENTER THE INTRO TEXT */
+    body {
+      background: url('images/dog_bg.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+      pointer-events: none;
+      backdrop-filter: grayscale(1);
+    }
+    .intro-text, .two-column, header, footer, h1, h3, p, ul, li {
+      position: relative;
+      z-index: 1;
+    }
     .intro-text {
       text-align: center;
       font-size: 1.5rem;
       margin: 2rem 0;
       font-weight: bold;
-      color: #c62828; /* match the highlight color in your CSS */
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
     }
-
-    /* TWO-COLUMN LAYOUT OVERRIDE */
     .two-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       padding: 2rem;
     }
-
     @media (max-width: 900px) {
       .two-column {
         grid-template-columns: 1fr;
@@ -52,6 +67,10 @@
   </div>
 </header>
 
+  <!-- Large Centered Text -->
+  <div style="text-align:center;margin-top:2rem;margin-bottom:2rem;">
+    <span style="font-size:3rem;font-weight:bold;color:#fff;text-shadow:2px 2px 8px #000;">Wanna Race?</span>
+  </div>
   <!-- INTRO TEXT CENTERED -->
   <p class="intro-text">
     That's Great!<br>
@@ -123,7 +142,7 @@
       <a href="http://tillamookanimalshelter.org" target="_blank">Tillamook Animal Shelter</a>
     </p>
     <p class="footer-disclaimer">
-      By order of the Oregon Dachshund Racing Commission, the maximum wager on an individual wiener race is $10,000.
+      By order of the Oregon Dachshund Racing Commission, the minimum wager on an individual wiener race is $10,000.
     </p>
   </footer>
 
