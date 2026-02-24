@@ -74,6 +74,49 @@ body {
   border-bottom: 2px solid white;
 }
 
+/* WATCH PAGE IMAGES */
+.watch-images {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.watch-images img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  flex: 1 1 300px;
+}
+
+@media (max-width: 700px) {
+  .watch-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .watch-images img {
+    max-width: 95vw;
+  }
+}
+
+/* RACE PAGE: WANNA RACE TEXT */
+.wanna-race-text {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+@media (max-width: 700px) {
+  .wanna-race-text {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}
+
 /* THREE COLUMN LAYOUT */
 .three-column {
   display: grid;

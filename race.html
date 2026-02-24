@@ -15,6 +15,13 @@
       background-size: cover;
       position: relative;
     }
+    @media (max-width: 700px) {
+      body {
+        background-attachment: scroll !important;
+        background-position: center top !important;
+        background-size: contain !important;
+      }
+    }
     body::before {
       content: '';
       position: fixed;
@@ -72,8 +79,8 @@
 </header>
 
   <!-- Large Centered Text -->
-  <div style="text-align:center;margin-top:2rem;margin-bottom:2rem;">
-    <span style="font-size:3rem;font-weight:bold;color:#fff;text-shadow:2px 2px 8px #000;">Wanna Race?</span>
+  <div class="wanna-race-text">
+    Wanna Race?
   </div>
   <!-- INTRO TEXT CENTERED -->
   <p class="intro-text">
